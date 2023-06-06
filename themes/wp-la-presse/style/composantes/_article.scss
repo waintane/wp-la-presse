@@ -1,0 +1,33 @@
+.article{
+    margin: 10px auto;
+    width: 85%;
+    height: 50vh;
+    background-color: rgb(14, 14, 14);
+    a{
+        width: 100%;
+        height: 100%;
+        
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            opacity: 0.75;
+            z-index: 1;
+        }
+    }
+    .the-content{
+        color: white;
+        position:relative;
+        top: -30vh;
+
+        width: 90%;
+        margin: 0px auto;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .extrait{
+            display: none;
+        }
+    }
+}
