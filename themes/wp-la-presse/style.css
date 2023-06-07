@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     Theme Name : Wp-la-presse
     Author : Olivier Paradis-Tardif
@@ -11,7 +12,9 @@
   margin: 10px auto;
   width: 85%;
   height: 50vh;
+  border-radius: 20px;
   background-color: #0e0e0e;
+  box-shadow: 0px 0px 10px #4b4b4b;
 }
 
 .article a {
@@ -23,7 +26,8 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.75;
+  border-radius: 20px;
+  opacity: 0.60;
   z-index: 1;
 }
 
@@ -35,6 +39,37 @@
   margin: 0px auto;
 }
 
+.article .the-content div:first-of-type {
+  width: fit-content;
+  text-align: center;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.article .the-content .Grand-Montréal {
+  background-color: #5c5cd8;
+}
+
+.article .the-content .Politique {
+  background-color: #5e5e75;
+}
+
+.article .the-content .Affaires {
+  background-color: #198dbb;
+}
+
+.article .the-content .Arts {
+  background-color: #459745;
+}
+
+.article .the-content .Sports {
+  background-color: #bd7b00;
+}
+
+.article .the-content .International {
+  background-color: #b40707;
+}
+
 .article .the-content a {
   text-decoration: none;
   color: white;
@@ -42,5 +77,13 @@
 
 .article .the-content .extrait {
   display: none;
+}
+
+.article .the-content .temps {
+  color: #adabab;
+}
+
+body {
+  background-color: #ececec;
 }
 /*# sourceMappingURL=style.css.map */

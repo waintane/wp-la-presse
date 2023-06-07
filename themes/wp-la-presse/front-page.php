@@ -21,7 +21,7 @@ get_header();
                     }
                 ?>
                 </div>
-                <p> <?php the_time('j F Y',) ?> </p>
+                <p class="temps"> <?php the_time('j F Y',) ?> </p>
             </div>
         </div>
         <?php
