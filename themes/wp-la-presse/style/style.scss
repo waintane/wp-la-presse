@@ -15,3 +15,7 @@
 @import "composantes/article";
 @import "composantes/body";
 //bro
+///////////////////////////////////////////////////////remove si je veux le admin bar
+#wpadminbar{
+    display: none;
+}

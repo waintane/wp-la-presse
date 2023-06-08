@@ -8,10 +8,58 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+header {
+  background-color: #da2525;
+  position: fixed;
+  z-index: 20;
+  top: 0px;
+  width: 100vw;
+}
+
+header .menu-burger svg {
+  color: white;
+  position: fixed;
+  top: 5px;
+  left: 5vw;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 8px 0px;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: fixed;
+  background-color: white;
+  width: 80vw;
+  height: 100%;
+  transition: 1s;
+}
+
+header .navigation a {
+  color: black;
+  text-decoration: none;
+  padding-left: 5vw;
+}
+
+header .menu-inactif {
+  transform: translateX(-100vw);
+}
+
+header .menu-actif {
+  transform: translateX(0px);
+}
+
 .article {
   margin: 10px auto;
   width: 85%;
-  height: 50vh;
+  height: 45vh;
   border-radius: 20px;
   background-color: #0e0e0e;
   box-shadow: 0px 0px 10px #4b4b4b;
@@ -70,6 +118,19 @@
   background-color: #b40707;
 }
 
+.article .the-content .Environnement {
+  background-color: #942b94;
+}
+
+.article .the-content .Santé {
+  background-color: #be5a09;
+}
+
+.article .the-content h2 {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
 .article .the-content a {
   text-decoration: none;
   color: white;
@@ -80,10 +141,19 @@
 }
 
 .article .the-content .temps {
-  color: #adabab;
+  color: #c7c7c7;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
   background-color: #ececec;
+}
+
+#wpadminbar {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+header{
+    background-color: rgb(218, 37, 37);
+    position: fixed;
+    z-index: 20;
+    top: 0px;
+    width: 100vw;
+    .menu-burger{
+        svg{
+            color: white;
+            position: fixed;
+            top: 5px;
+            left: 5vw;
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 25px;
+        padding: 8px 0px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .navigation{
+        position: fixed;
+        background-color: white;
+        width: 80vw;
+        height: 100%;
+        transition: 1s;
+        a{
+            color: black;
+            text-decoration: none;
+            padding-left: 5vw;
+        }
+    }
+    .menu-inactif{
+        transform: translateX(-100vw);
+    }
+    .menu-actif{
+        transform: translateX(0px);
+    }
+}
