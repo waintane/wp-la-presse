@@ -36,16 +36,52 @@ header h1 a {
 
 header .navigation {
   position: fixed;
-  background-color: white;
-  width: 80vw;
+  width: 100vw;
   height: 100%;
-  transition: 1s;
+  transition: 0.7s;
+}
+
+header .navigation .background-menu {
+  width: 80vw;
+  height: 100vh;
+  position: absolute;
+  padding-right: 5vw;
+  box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.315);
+  background-color: #f1f1f1;
+  z-index: 5;
+}
+
+header .navigation .section-principale {
+  padding-left: 5vw;
+}
+
+header .navigation .section-recherche {
+  width: 100%;
+  padding: 20px 0px 20px 5vw;
+}
+
+header .navigation .section-recherche input {
+  width: 95%;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.37);
+  border-radius: 5px;
+  padding: 4px;
+}
+
+header .navigation li {
+  position: relative;
+  z-index: 10;
+  list-style: none;
+  padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+  cursor: pointer;
 }
 
 header .navigation a {
+  position: relative;
+  z-index: 10;
   color: black;
   text-decoration: none;
-  padding-left: 5vw;
 }
 
 header .menu-inactif {
@@ -60,6 +96,7 @@ header .menu-actif {
   margin: 10px auto;
   width: 85%;
   height: 45vh;
+  overflow: hidden;
   border-radius: 20px;
   background-color: #0e0e0e;
   box-shadow: 0px 0px 10px #4b4b4b;
@@ -74,7 +111,6 @@ header .menu-actif {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
   opacity: 0.60;
   z-index: 1;
 }
@@ -94,36 +130,40 @@ header .menu-actif {
   border-radius: 5px;
 }
 
-.article .the-content .Grand-Montréal {
+.article .the-content .GRAND-MONTRÉAL {
   background-color: #5c5cd8;
 }
 
-.article .the-content .Politique {
+.article .the-content .POLITIQUE {
   background-color: #5e5e75;
 }
 
-.article .the-content .Affaires {
+.article .the-content .AFFAIRES {
   background-color: #198dbb;
 }
 
-.article .the-content .Arts {
+.article .the-content .ARTS {
   background-color: #459745;
 }
 
-.article .the-content .Sports {
+.article .the-content .SPORTS {
   background-color: #bd7b00;
 }
 
-.article .the-content .International {
+.article .the-content .INTERNATIONAL {
   background-color: #b40707;
 }
 
-.article .the-content .Environnement {
+.article .the-content .ENVIRONNEMENT {
   background-color: #942b94;
 }
 
-.article .the-content .Santé {
+.article .the-content .SANTÉ {
   background-color: #be5a09;
+}
+
+.article .the-content .CHRONIQUES {
+  background-color: #9b452b;
 }
 
 .article .the-content h2 {
@@ -150,7 +190,14 @@ header .menu-actif {
 }
 
 body {
-  background-color: #ececec;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  width: 85%;
+  margin: 0px auto;
+  font-size: 27px;
+  padding: 10px 0px;
 }
 
 #wpadminbar {

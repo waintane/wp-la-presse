@@ -2,6 +2,7 @@
     margin: 10px auto;
     width: 85%;
     height: 45vh;
+    overflow: hidden;
     border-radius: $border-radius-primaire;
     background-color: rgb(14, 14, 14);
     box-shadow: 0px 0px 10px rgb(75, 75, 75);
@@ -13,7 +14,6 @@
             object-fit: cover;
             width: 100%;
             height: 100%;
-            border-radius: $border-radius-primaire;
             opacity: 0.60;
             z-index: 1;
         }
@@ -32,30 +32,34 @@
             border-radius: $border-radius-secondaire;
         }
         //differentes categories
-        .Grand-Montréal{
+        .GRAND-MONTRÉAL{
             background-color: $couleur-montreal;
         }
-        .Politique{
+        .POLITIQUE{
             background-color: $couleur-politique;
         }
-        .Affaires{
+        .AFFAIRES{
             background-color: $couleur-affaires;
         }
-        .Arts{
+        .ARTS{
             background-color: $couleur-arts;
         }
-        .Sports{
+        .SPORTS{
             background-color: $couleur-sports;
         }
-        .International{
+        .INTERNATIONAL{
             background-color: $couleur-international;
         }
-        .Environnement{
+        .ENVIRONNEMENT{
             background-color: $couleur-environnement;
         }
-        .Santé{
-            background-color: rgb(190, 90, 9);
+        .SANTÉ{
+            background-color: $couleur-sante;
         }
+        .CHRONIQUES{
+            background-color: $couleur-chronique;
+        }
+        // fin des categories
         h2{
             margin-bottom: 0px;
             padding-bottom: 10px;
