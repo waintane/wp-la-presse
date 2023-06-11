@@ -1,0 +1,42 @@
+.single-article{
+    .categorie{
+        width: 100vw;
+        text-align: center;
+        padding: 5px 0px;
+        a{
+            padding: 0pc 20vw;
+            color: $couleur-cover-article-mobile;
+            text-decoration: none;
+        }
+    }
+    .thumbnail{
+        width: 100vw;
+        height: 35vh;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .the-content{
+        width: 85vw;
+        margin: 0px auto;
+        h2{
+            margin: 5px 0px;
+            font-size: 30px;
+        }
+        p:first-of-type{
+            font-weight: 600;
+        }
+        p{
+            padding: 10px 0px;
+            font-size: 19px;
+        }
+        .temps{
+            color: grey;
+            width: 85vw;
+            border-bottom: 1px solid grey;
+        }
+    }
+}   

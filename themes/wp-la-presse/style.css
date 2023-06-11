@@ -92,7 +92,58 @@ header .menu-actif {
   transform: translateX(0px);
 }
 
-.article {
+@media only screen and (min-width: 1000px) {
+  header .menu-burger {
+    display: none;
+  }
+  header .navigation {
+    color: white;
+    transition: 0s;
+    transform: translateX(0px);
+    width: 100vw;
+    height: 6vh;
+  }
+  header .navigation .background-menu {
+    background-color: #181818;
+    padding: 0px 20px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+  }
+  header .navigation .background-menu .section-recherche {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+  }
+  header .navigation .background-menu .section-principale {
+    padding: 0px;
+    height: 100%;
+  }
+  header .navigation .background-menu .section-principale a {
+    color: white;
+    font-size: clamp(16px, 1vw, 40px);
+    transition: 0.2s;
+  }
+  header .navigation .background-menu .section-principale div {
+    height: 100%;
+  }
+  header .navigation .background-menu .section-principale div ul {
+    padding: 0px 1vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .navigation .background-menu .section-principale div ul li {
+    border-bottom: none;
+  }
+  header .navigation .background-menu .section-principale h3 {
+    display: none;
+  }
+}
+
+article {
   margin: 10px auto;
   width: 85%;
   height: 45vh;
@@ -100,22 +151,27 @@ header .menu-actif {
   border-radius: 20px;
   background-color: #0e0e0e;
   box-shadow: 0px 0px 10px #4b4b4b;
+  transition: 0.5s;
 }
 
-.article a {
+article:hover {
+  box-shadow: 0px 0px 15px #254853;
+}
+
+article a {
   width: 100%;
   height: 100%;
 }
 
-.article a img {
+article a img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.60;
+  opacity: 0.50;
   z-index: 1;
 }
 
-.article .the-content {
+article .the-content {
   color: white;
   position: relative;
   top: -30vh;
@@ -123,65 +179,60 @@ header .menu-actif {
   margin: 0px auto;
 }
 
-.article .the-content div:first-of-type {
+article .the-content div:first-of-type {
   width: fit-content;
   text-align: center;
   padding: 3px 10px;
   border-radius: 5px;
 }
 
-.article .the-content .GRAND-MONTRÉAL {
-  background-color: #5c5cd8;
-}
-
-.article .the-content .POLITIQUE {
-  background-color: #5e5e75;
-}
-
-.article .the-content .AFFAIRES {
-  background-color: #198dbb;
-}
-
-.article .the-content .ARTS {
-  background-color: #459745;
-}
-
-.article .the-content .SPORTS {
-  background-color: #bd7b00;
-}
-
-.article .the-content .INTERNATIONAL {
-  background-color: #b40707;
-}
-
-.article .the-content .ENVIRONNEMENT {
-  background-color: #942b94;
-}
-
-.article .the-content .SANTÉ {
-  background-color: #be5a09;
-}
-
-.article .the-content .CHRONIQUES {
-  background-color: #9b452b;
-}
-
-.article .the-content h2 {
+article .the-content h2 {
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
 
-.article .the-content a {
+article .the-content a {
   text-decoration: none;
   color: white;
 }
 
-.article .the-content .extrait {
+article .the-content .extrait {
   display: none;
 }
 
-.article .the-content .temps {
+article .the-content .temps {
   color: #c7c7c7;
+  position: absolute;
+  top: 25vh;
+}
+
+@media only screen and (min-width: 1000px) {
+  article {
+    border-radius: 5px;
+    width: 100%;
+    height: 44vh;
+  }
+  article a img {
+    opacity: 1;
+  }
+  article:hover {
+    transform: scale(1.01);
+  }
+  article .the-content {
+    top: -19vh;
+    padding: 10px 5% 600px 5%;
+    background-color: rgba(12, 12, 12, 0.705);
+    backdrop-filter: blur(20px);
+  }
+  article .the-content .categorie {
+    margin: 5px 0px;
+  }
+  article .the-content h2 {
+    font-size: clamp(22px, 1.4vw, 60px);
+  }
+  article .the-content .temps {
+    top: 15.2vh;
+  }
 }
 
 * {
@@ -193,11 +244,235 @@ body {
   background-color: #f1f1f1;
 }
 
-h1 {
+.titre-top {
   width: 85%;
+}
+
+h1 {
   margin: 0px auto;
-  font-size: 27px;
+  font-size: 29px;
+  padding: 25px 0px;
+}
+
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .titre-top {
+    padding-top: 40px;
+    width: 75%;
+  }
+  .main {
+    width: 75vw;
+    margin: 0px auto;
+  }
+  .main .separation {
+    width: 100%;
+    height: 4px;
+    margin: 5px 0px;
+    background-color: #457780;
+  }
+  .main .main-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 35vh;
+    gap: 30px;
+  }
+  .main .main-section article:first-of-type {
+    grid-column: 1/4;
+    height: 50vh;
+  }
+  .main .main-section article:first-of-type .categorie {
+    margin: 2vh 0px;
+  }
+  .main .main-section article:first-of-type h2 {
+    margin: 2vh 0px;
+  }
+  .main .main-section article:first-of-type .the-content {
+    top: -51vh;
+    margin: 0px 0px 0px auto;
+    width: 24%;
+    height: 50vh;
+  }
+  .main .main-section article:first-of-type .the-content .extrait {
+    display: flex;
+    font-size: clamp(16px, 1.1vw, 40px);
+  }
+  .main .main-section article:first-of-type .temps {
+    top: 46vh;
+  }
+  .main .section-secondaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.08fr;
+    gap: 30px;
+  }
+  .main .section-secondaire .cat-page {
+    height: 50%;
+    margin: auto 0px;
+    clip-path: polygon(0 0, 50% 50%, 0 100%);
+    transition: 0.5s;
+  }
+  .main .section-secondaire .cat-page a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .main .section-secondaire .cat-page:hover {
+    transform: translateX(5px) scale(1.01);
+  }
+  .main .section-tertiaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .main .section-tertiaire .sous-section article:first-of-type {
+    height: 55vh;
+    margin-bottom: 40px;
+  }
+  .main .section-tertiaire .sous-section article:first-of-type .the-content {
+    top: -30vh;
+  }
+  .main .section-tertiaire .sous-section article:first-of-type .the-content .extrait {
+    display: flex;
+    font-size: clamp(16px, 1.01vw, 30px);
+    height: 10vh;
+    overflow: hidden;
+  }
+  .main .section-tertiaire .sous-section article:first-of-type .temps {
+    top: 27vh;
+  }
+}
+
+.single-article .categorie {
+  width: 100vw;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.single-article .categorie a {
+  padding: 0pc 20vw;
+  color: white;
+  text-decoration: none;
+}
+
+.single-article .thumbnail {
+  width: 100vw;
+  height: 35vh;
+  overflow: hidden;
+}
+
+.single-article .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.single-article .the-content {
+  width: 85vw;
+  margin: 0px auto;
+}
+
+.single-article .the-content h2 {
+  margin: 5px 0px;
+  font-size: 30px;
+}
+
+.single-article .the-content p:first-of-type {
+  font-weight: 600;
+}
+
+.single-article .the-content p {
   padding: 10px 0px;
+  font-size: 19px;
+}
+
+.single-article .the-content .temps {
+  color: grey;
+  width: 85vw;
+  border-bottom: 1px solid grey;
+}
+
+article .GRAND-MONTRÉAL {
+  background-color: #5c5cd8;
+}
+
+article .POLITIQUE {
+  background-color: #5e5e75;
+}
+
+article .AFFAIRES {
+  background-color: #198dbb;
+}
+
+article .ARTS {
+  background-color: #459745;
+}
+
+article .SPORTS {
+  background-color: #bd7b00;
+}
+
+article .INTERNATIONAL {
+  background-color: #b40707;
+}
+
+article .ENVIRONNEMENT {
+  background-color: #942b94;
+}
+
+article .SANTÉ {
+  background-color: #be5a09;
+}
+
+article .CHRONIQUES {
+  background-color: #9b452b;
+}
+
+article .VOYAGE {
+  background-color: #14c572;
+}
+
+header .navigation ul .GRAND-MONTRÉAL:hover {
+  color: #5c5cd8;
+}
+
+header .navigation ul .POLITIQUE:hover {
+  color: #5e5e75;
+}
+
+header .navigation ul .AFFAIRES:hover {
+  color: #198dbb;
+}
+
+header .navigation ul .ARTS:hover {
+  color: #459745;
+}
+
+header .navigation ul .SPORTS:hover {
+  color: #bd7b00;
+}
+
+header .navigation ul .INTERNATIONAL:hover {
+  color: #b40707;
+}
+
+header .navigation ul .ENVIRONNEMENT:hover {
+  color: #942b94;
+}
+
+header .navigation ul .SANTÉ:hover {
+  color: #be5a09;
+}
+
+header .navigation ul .CHRONIQUES:hover {
+  color: #9b452b;
+}
+
+header .navigation ul .VOYAGE:hover {
+  color: #14c572;
 }
 
 #wpadminbar {

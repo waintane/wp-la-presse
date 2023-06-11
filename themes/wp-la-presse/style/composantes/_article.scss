@@ -1,4 +1,4 @@
-.article{
+article{
     margin: 10px auto;
     width: 85%;
     height: 45vh;
@@ -6,6 +6,10 @@
     border-radius: $border-radius-primaire;
     background-color: rgb(14, 14, 14);
     box-shadow: 0px 0px 10px rgb(75, 75, 75);
+    transition: 0.5s;
+    &:hover{
+        box-shadow: 0px 0px 15px rgb(37, 72, 83);
+    }   
     a{
         width: 100%;
         height: 100%;
@@ -14,7 +18,7 @@
             object-fit: cover;
             width: 100%;
             height: 100%;
-            opacity: 0.60;
+            opacity: 0.50;
             z-index: 1;
         }
     }
@@ -31,35 +35,6 @@
             padding: 3px 10px;
             border-radius: $border-radius-secondaire;
         }
-        //differentes categories
-        .GRAND-MONTRÉAL{
-            background-color: $couleur-montreal;
-        }
-        .POLITIQUE{
-            background-color: $couleur-politique;
-        }
-        .AFFAIRES{
-            background-color: $couleur-affaires;
-        }
-        .ARTS{
-            background-color: $couleur-arts;
-        }
-        .SPORTS{
-            background-color: $couleur-sports;
-        }
-        .INTERNATIONAL{
-            background-color: $couleur-international;
-        }
-        .ENVIRONNEMENT{
-            background-color: $couleur-environnement;
-        }
-        .SANTÉ{
-            background-color: $couleur-sante;
-        }
-        .CHRONIQUES{
-            background-color: $couleur-chronique;
-        }
-        // fin des categories
         h2{
             margin-bottom: 0px;
             padding-bottom: 10px;
@@ -73,6 +48,39 @@
         }
         .temps{
             color: $couleur-micro-info;
+            position: absolute;
+            top: 25vh;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    article{
+        border-radius: 5px;
+        width: 100%;
+        height: 44vh;
+        a{
+            img{
+                opacity: 1;
+            }
+        }
+        &:hover{
+            transform: scale(1.01);
+        }
+        .the-content{
+            top: -19vh;
+            padding: 10px 5% 600px 5%;
+            background-color: rgba(12, 12, 12, 0.705);
+            backdrop-filter: blur(20px);
+            .categorie{
+                margin: 5px 0px;
+            }
+            h2{
+                font-size: clamp(22px, 1.4vw, 60px);
+            }
+            .temps{
+                top: 15.2vh;
+            }
         }
     }
 }

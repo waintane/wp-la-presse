@@ -9,7 +9,7 @@ get_header();
     while(have_posts()){
         the_post();
         ?>
-        <div class="article">
+        <article>
             <a href=<?php the_permalink(); ?>><?php the_post_thumbnail('medium'); ?></a>
             <div class="the-content">
                 <div class="<?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?>"> <?php echo get_the_category_list(', ') ?> </div>
@@ -25,7 +25,7 @@ get_header();
                 </div>
                 <p class="temps"> <?php the_time('j F Y',) ?> </p>
             </div>
-        </div>
+        </article>
         <?php
     }
 ?>

@@ -1,0 +1,64 @@
+article{
+    .GRAND-MONTRÉAL{
+        background-color: $couleur-montreal;
+    }
+    .POLITIQUE{
+        background-color: $couleur-politique;
+    }
+    .AFFAIRES{
+        background-color: $couleur-affaires;
+    }
+    .ARTS{
+        background-color: $couleur-arts;
+    }
+    .SPORTS{
+        background-color: $couleur-sports;
+    }
+    .INTERNATIONAL{
+        background-color: $couleur-international;
+    }
+    .ENVIRONNEMENT{
+        background-color: $couleur-environnement;
+    }
+    .SANTÉ{
+        background-color: $couleur-sante;
+    }
+    .CHRONIQUES{
+        background-color: $couleur-chronique;
+    }
+    .VOYAGE{
+        background-color: $couleur-voyage;
+    }
+}
+header .navigation ul{
+    .GRAND-MONTRÉAL:hover{
+        color: $couleur-montreal;
+    }
+    .POLITIQUE:hover{
+        color: $couleur-politique;
+    }
+    .AFFAIRES:hover{
+        color: $couleur-affaires;
+    }
+    .ARTS:hover{
+        color: $couleur-arts;
+    }
+    .SPORTS:hover{
+        color:$couleur-sports;
+    }
+    .INTERNATIONAL:hover{
+        color: $couleur-international;
+    }
+    .ENVIRONNEMENT:hover{
+        color: $couleur-environnement;
+    }
+    .SANTÉ:hover{
+        color: $couleur-sante;
+    }
+    .CHRONIQUES:hover{
+        color: $couleur-chronique;
+    }
+    .VOYAGE:hover{
+        color: $couleur-voyage;
+    }
+}
