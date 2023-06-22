@@ -206,6 +206,12 @@ article .the-content .temps {
   top: 25vh;
 }
 
+@media only screen and (min-width: 600px) {
+  article {
+    height: 40vh;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   article {
     border-radius: 5px;
@@ -244,11 +250,30 @@ body {
   background-color: #f1f1f1;
 }
 
-.titre-top {
-  width: 85%;
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+  .separation {
+    width: 100%;
+    margin: 0px auto;
+    background-color: #457780;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .separation {
+    width: 100%;
+    height: 4px;
+    margin: 5px 0px;
+    background-color: #457780;
+  }
 }
 
 h1 {
+  width: 85%;
   margin: 0px auto;
   font-size: 29px;
   padding: 25px 0px;
@@ -259,20 +284,38 @@ h1 a {
   text-decoration: none;
 }
 
+.cat-page {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .titre-top {
+    width: 85%;
+    margin: 4vh auto 0px auto;
+  }
+  .titre-top h1 {
+    width: 85%;
+  }
+  .main {
+    width: 85%;
+    margin: 0px auto;
+  }
+}
+
 @media only screen and (min-width: 1000px) {
   .titre-top {
-    padding-top: 40px;
     width: 75%;
+    margin: 10vh auto 0px auto;
+  }
+  .titre-top h1 {
+    width: 100%;
   }
   .main {
     width: 75vw;
     margin: 0px auto;
   }
-  .main .separation {
+  .main h1 {
     width: 100%;
-    height: 4px;
-    margin: 5px 0px;
-    background-color: #457780;
   }
   .main .main-section {
     width: 100%;
@@ -310,6 +353,7 @@ h1 a {
     gap: 30px;
   }
   .main .section-secondaire .cat-page {
+    display: flex;
     height: 50%;
     margin: auto 0px;
     clip-path: polygon(0 0, 50% 50%, 0 100%);
@@ -395,43 +439,76 @@ h1 a {
   border-bottom: 1px solid grey;
 }
 
-article .GRAND-MONTRÉAL {
+@media only screen and (min-width: 1000px) {
+  .single-article {
+    width: 50vw;
+    margin: 12vh auto 0px auto;
+  }
+  .single-article .categorie {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .single-article .categorie a {
+    font-size: clamp(16px, 1.1vw, 40px);
+    padding: 0px 10vw;
+  }
+  .single-article .thumbnail {
+    width: 100%;
+    height: 45vh;
+    overflow: hidden;
+  }
+  .single-article .the-content {
+    width: 100%;
+  }
+  .single-article .the-content h2 {
+    margin: 20px 0px;
+  }
+  .single-article .the-content p:first-of-type {
+    font-size: clamp(17px, 1.2vw, 45px);
+    padding: 10px 0px 30px 0px;
+  }
+  .single-article .the-content p, .single-article .the-content li {
+    font-size: clamp(16px, 1.12vw, 40px);
+  }
+}
+
+article .GRAND-MONTRÉAL, .single-article .GRAND-MONTRÉAL, .main .GRAND-MONTRÉAL {
   background-color: #5c5cd8;
 }
 
-article .POLITIQUE {
+article .POLITIQUE, .single-article .POLITIQUE, .main .POLITIQUE {
   background-color: #5e5e75;
 }
 
-article .AFFAIRES {
+article .AFFAIRES, .single-article .AFFAIRES, .main .AFFAIRES {
   background-color: #198dbb;
 }
 
-article .ARTS {
+article .ARTS, .single-article .ARTS, .main .ARTS {
   background-color: #459745;
 }
 
-article .SPORTS {
+article .SPORTS, .single-article .SPORTS, .main .SPORTS {
   background-color: #bd7b00;
 }
 
-article .INTERNATIONAL {
+article .INTERNATIONAL, .single-article .INTERNATIONAL, .main .INTERNATIONAL {
   background-color: #b40707;
 }
 
-article .ENVIRONNEMENT {
+article .ENVIRONNEMENT, .single-article .ENVIRONNEMENT, .main .ENVIRONNEMENT {
   background-color: #942b94;
 }
 
-article .SANTÉ {
+article .SANTÉ, .single-article .SANTÉ, .main .SANTÉ {
   background-color: #be5a09;
 }
 
-article .CHRONIQUES {
+article .CHRONIQUES, .single-article .CHRONIQUES, .main .CHRONIQUES {
   background-color: #9b452b;
 }
 
-article .VOYAGE {
+article .VOYAGE, .single-article .VOYAGE, .main .VOYAGE {
   background-color: #14c572;
 }
 
@@ -475,7 +552,127 @@ header .navigation ul .VOYAGE:hover {
   color: #14c572;
 }
 
-#wpadminbar {
+@media only screen and (min-width: 1000px) {
+  .top-archive {
+    width: 88vw;
+    margin: 14vh auto 0px auto;
+  }
+  .page-archive {
+    margin: 0px auto;
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-end;
+    gap: 30px;
+  }
+  .page-archive article:first-of-type {
+    grid-column: 1/3;
+    height: 55vh;
+  }
+}
+
+footer .footer {
+  margin-top: 40px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+  color: white;
+}
+
+footer .footer p {
+  width: 80%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  footer {
+    margin-top: 100px;
+  }
+  footer a {
+    color: #b5dbe2;
+    text-decoration: none;
+  }
+  footer h1 {
+    margin-left: 12.5vw;
+  }
+  footer .separation {
+    width: 75vw;
+    margin: 0px auto;
+  }
+  footer .section-footer {
+    margin: 0px auto;
+    width: 75vw;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer .section-footer article {
+    height: 40vh;
+  }
+  footer .section-footer article h2 {
+    font-size: clamp(20px, 1.3vw, 55px);
+    height: 5vh;
+    overflow: hidden;
+  }
+}
+
+.not-visible {
   display: none;
+}
+
+.visible {
+  position: fixed;
+  padding: 0px 1.5vw;
+  width: 100vw;
+  height: 93vh;
+  top: 7vh;
+  background-color: rgba(255, 255, 255, 0.897);
+  backdrop-filter: blur(5px);
+  overflow-y: scroll;
+}
+
+.visible button {
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 1vh 0vw 0vh 90vw;
+}
+
+.visible section {
+  width: 80%;
+}
+
+.visible section div {
+  border-bottom: 2px solid #afafaf;
+  padding-bottom: 5px;
+  margin: 10px 0px;
+}
+
+.visible section div a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: clamp(17px, 1.2vw, 45px);
+}
+
+.visible section div p {
+  font-size: clamp(16px, 1.12vw, 40px);
+}
+
+@media only screen and (min-width: 1000px) {
+  .visible {
+    position: fixed;
+    width: 100vw;
+    height: 89vh;
+    top: 11vh;
+  }
+  .visible button {
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    margin: 4vh 0vw 0vh 95vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+footer{
+    .footer{
+        margin-top: 40px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(17, 17, 17);
+        color: white;
+        p{
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    footer{
+        margin-top: 100px;
+        a{
+            color: rgb(181, 219, 226);
+            text-decoration: none;
+        }
+        h1{
+            margin-left: 12.5vw;
+        }
+        .separation{
+            width: 75vw;
+            margin: 0px auto;
+        }
+        .section-footer{
+            margin: 0px auto;
+            width: 75vw;
+            display: grid;
+            gap: $grid-gap;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            article{
+                height: 40vh;
+                h2{
+                    font-size: clamp(20px, 1.3vw, 55px);
+                    height: 5vh;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

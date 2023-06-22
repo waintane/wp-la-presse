@@ -53,7 +53,11 @@ article{
         }
     }
 }
-
+@media only screen and (min-width: 600px){
+    article{
+        height: 40vh;
+    }
+}
 @media only screen and (min-width: 1000px){
     article{
         border-radius: 5px;

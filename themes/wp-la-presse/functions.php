@@ -4,6 +4,7 @@
 function la_presse_files(){
     wp_enqueue_script('script-menuBurger', get_template_directory_uri() . '/scripts/menuBurger.js', array(), Null, true);
     wp_enqueue_script('script-header', get_template_directory_uri() . '/scripts/header.js', array(), Null, true);
+    wp_enqueue_script('script-search', get_template_directory_uri() . '/scripts/search.js', array(), Null, true);
     wp_enqueue_style("la_presse_main_style", get_stylesheet_uri());
 }
 

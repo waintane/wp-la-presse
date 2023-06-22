@@ -1,0 +1,19 @@
+
+@media only screen and (min-width: 1000px){
+    .top-archive{
+        width: 88vw;
+        margin: 14vh auto 0px auto;
+    }
+    .page-archive{
+        margin: 0px auto;
+        width: 75vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-end;
+        gap: $grid-gap;
+        article:first-of-type{
+            grid-column: 1/3;
+            height: 55vh;
+        }
+    }
+}

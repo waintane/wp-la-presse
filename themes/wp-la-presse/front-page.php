@@ -1,7 +1,10 @@
 <?php
 get_header();
 ?>
-<h1 class="titre-top">LES GRANDS TITRES</h1>
+<div class="titre-top">
+    <h1>LES GRANDS TITRES</h1>
+    <div class="separation"></div>
+</div>
 <div class="main">
     <?php 
         //------------------------------------------------------plus recents articles
