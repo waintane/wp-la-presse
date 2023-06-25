@@ -74,8 +74,23 @@ header{
         transform: translateX(0px);
     }
 }
+@media only screen and (min-width: 600px){
+    header{
+        h1{
+            padding: 13px 0px;
+        }
+        .menu-burger{
+            svg{
+                top: 8px;
+            }
+        }
+    }
+}
 @media only screen and (min-width: 1000px){
     header{
+        h1{
+            padding: 8px 0px;
+        }
         .menu-burger{
             display: none;
         }
