@@ -39,7 +39,15 @@
             border-bottom: 1px solid grey;
         }
     }
-}  
+} 
+@media only screen and (min-width: 600px){
+    .single-article{
+        margin-top: 3.9vh;
+        .categorie{
+            padding: 1.1vh 0px;
+        }
+    }
+} 
 @media only screen and (min-width: 1000px){
     .single-article{
         width: 50vw;

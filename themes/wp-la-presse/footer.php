@@ -28,7 +28,7 @@
         ?>
     </div>
     <div class="footer">
-        <p>Refonte du site officiel de <a href="https://www.lapresse.ca/" target="_blank">la press</a> fait par Olivier Paradis-Tardif</p>
+        <p>Site wordpress complété pour le portfolio de Olivier Paradis-Tardif</p>
     </div>  
 </footer>
 <?php wp_footer()?>

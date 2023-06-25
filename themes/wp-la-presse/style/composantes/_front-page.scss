@@ -2,7 +2,7 @@
 h1{
     width: 85%;
     margin: 0px auto;
-    font-size: 29px;
+    font-size: clamp(25px, 1.5vw, 60px);
     padding: 25px 0px;
     a{
         color: black;
@@ -107,12 +107,12 @@ h1{
                         .extrait{
                             display: flex;
                             font-size: clamp(16px, 1.01vw, 30px);
-                            height: 10vh;
+                            height: 8.6vh;
                             overflow: hidden;
                         }   
                     }
                     .temps{
-                        top: 27vh;
+                        top: 26vh;
                     }
                 }
             }

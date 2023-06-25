@@ -9,7 +9,7 @@
 }
 
 header {
-  background-color: #da2525;
+  background-color: #348fc4;
   position: fixed;
   z-index: 20;
   top: 0px;
@@ -189,6 +189,7 @@ article .the-content div:first-of-type {
 article .the-content h2 {
   margin-bottom: 0px;
   padding-bottom: 10px;
+  font-size: clamp(25px, 3vw, 50px);
 }
 
 article .the-content a {
@@ -208,7 +209,28 @@ article .the-content .temps {
 
 @media only screen and (min-width: 600px) {
   article {
-    height: 40vh;
+    height: clamp(100px, 45vh, 400px);
+  }
+  article .the-content {
+    top: -25vh;
+  }
+  article .the-content div:first-of-type {
+    font-size: clamp(22px, 2vw, 50px);
+  }
+  article .the-content h2 {
+    font-size: clamp(25px, 4vw, 55px);
+  }
+  article .the-content a {
+    text-decoration: none;
+    color: white;
+  }
+  article .the-content .extrait {
+    display: none;
+  }
+  article .the-content .temps {
+    color: #c7c7c7;
+    position: absolute;
+    top: 17vh;
   }
 }
 
@@ -229,6 +251,9 @@ article .the-content .temps {
     padding: 10px 5% 600px 5%;
     background-color: rgba(12, 12, 12, 0.705);
     backdrop-filter: blur(20px);
+  }
+  article .the-content div:first-of-type {
+    font-size: clamp(18px, 1vw, 50px);
   }
   article .the-content .categorie {
     margin: 5px 0px;
@@ -275,7 +300,7 @@ body {
 h1 {
   width: 85%;
   margin: 0px auto;
-  font-size: 29px;
+  font-size: clamp(25px, 1.5vw, 60px);
   padding: 25px 0px;
 }
 
@@ -382,11 +407,11 @@ h1 a {
   .main .section-tertiaire .sous-section article:first-of-type .the-content .extrait {
     display: flex;
     font-size: clamp(16px, 1.01vw, 30px);
-    height: 10vh;
+    height: 8.6vh;
     overflow: hidden;
   }
   .main .section-tertiaire .sous-section article:first-of-type .temps {
-    top: 27vh;
+    top: 26vh;
   }
 }
 
@@ -437,6 +462,15 @@ h1 a {
   color: grey;
   width: 85vw;
   border-bottom: 1px solid grey;
+}
+
+@media only screen and (min-width: 600px) {
+  .single-article {
+    margin-top: 3.9vh;
+  }
+  .single-article .categorie {
+    padding: 1.1vh 0px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {

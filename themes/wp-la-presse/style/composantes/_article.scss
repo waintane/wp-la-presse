@@ -38,6 +38,7 @@ article{
         h2{
             margin-bottom: 0px;
             padding-bottom: 10px;
+            font-size: clamp(25px, 3vw, 50px);
         }
         a{
             text-decoration: none;
@@ -55,7 +56,28 @@ article{
 }
 @media only screen and (min-width: 600px){
     article{
-        height: 40vh;
+        height: clamp(100px, 45vh, 400px);
+        .the-content{
+            top: -25vh;
+            & div:first-of-type{
+                font-size: clamp(22px, 2vw, 50px)
+            }
+            h2{
+                font-size: clamp(25px, 4vw, 55px);
+            }
+            a{
+                text-decoration: none;
+                color: $couleur-cover-article-mobile;
+            }
+            .extrait{
+                display: none;
+            }
+            .temps{
+                color: $couleur-micro-info;
+                position: absolute;
+                top: 17vh;
+            }
+        }
     }
 }
 @media only screen and (min-width: 1000px){
@@ -76,6 +98,9 @@ article{
             padding: 10px 5% 600px 5%;
             background-color: rgba(12, 12, 12, 0.705);
             backdrop-filter: blur(20px);
+            & div:first-of-type{
+                font-size: clamp(18px, 1vw, 50px);
+            }
             .categorie{
                 margin: 5px 0px;
             }
